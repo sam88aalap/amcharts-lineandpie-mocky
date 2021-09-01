@@ -1,0 +1,30 @@
+<div class="center-content">
+  <mat-card class="example-card">
+    <mat-card-header style="align-items: center;" >
+      <!-- <div mat-card-avatar class="example-header-image"></div> -->
+      <mat-card-title style='font-family: fantasy; font-size: 45px; ' >Charts</mat-card-title>
+
+      <!-- <mat-card-subtitle>Dog Breed</mat-card-subtitle> -->
+    </mat-card-header>
+    <div class='select'>
+      <mat-label>Select an option</mat-label>
+    <mat-select  [(ngModel)]="changeChart" [(value)]="selected">
+      <mat-option value="Line Chart" (click)="onChangeAmountClicked()">Line Chart</mat-option>
+      <mat-option value="Pie Chart" (click)="onChangeAmountClicked()">Pie Chart</mat-option>
+  </mat-select>
+    </div>
+
+    <mat-card-content>
+
+
+      <!-- <mat-form-field appearance="fill"> -->
+
+
+      <!-- </mat-form-field> -->
+      <router-outlet></router-outlet>
+    </mat-card-content>
+  </mat-card>
+
+  </div>
+
+
